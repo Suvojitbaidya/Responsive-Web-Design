@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Hero Section Background with Linear Gradient */
+        .hero-section {
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images.jpeg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Courses Section */
+        .course-item {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Classroom Section */
+        .classroom-item {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Awards Section */
+        .award-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .award-item img {
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        /* Banner Section */
+        .banner-item {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#home"><img src="https://www.innomatics.in/wp-content/uploads/2023/01/Innomatics-Logo1.png" alt="Innomatics Logo" width="150"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#classrooms">Classrooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#banners">Banners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Welcome to Innomatics</h1>
+            <p>Empowering future professionals with cutting-edge skills.</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container mt-5">
+        <h2 class="text-center">Courses Offered</h2>
+        <div class="row">
+            <div class="col-md-4 course-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/2023/01/No-1-best-data-science-course-training-institute-in-hyderabad.jpg" class="img-fluid" alt="Data Science Course">
+                <h4>Data Science Course</h4>
+                <p>This course covers data analysis, visualization, and machine learning techniques.</p>
+            </div>
+            <div class="col-md-4 course-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/2023/01/Full-Stack-Web-Development-training-program-Innomatics-research-labs-india.png" class="img-fluid" alt="Full Stack Web Development">
+                <h4>Full Stack Web Development</h4>
+                <p>Learn to build dynamic websites and applications using modern technologies.</p>
+            </div>
+            <div class="col-md-4 course-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/2023/01/digital-marketing-course-training-hyderabad.jpg" class="img-fluid" alt="Digital Marketing Course">
+                <h4>Digital Marketing Course</h4>
+                <p>Master the skills needed to succeed in digital marketing strategies.</p>
+            </div>
+            <div class="col-md-4 course-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/2023/01/big-data-analytics-with-hadoop-training-in-hyderabad-india.jpg" class="img-fluid" alt="Big Data Analytics">
+                <h4>Big Data Analytics</h4>
+                <p>Understand big data technologies and how to analyze large datasets effectively.</p>
+            </div>
+            <div class="col-md-4 course-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/2023/01/AWS-training-institute-Innomatics-research-labs-Kukatpallihyderabad.jpg" class="img-fluid" alt="AWS Training">
+                <h4>AWS Training</h4>
+                <p>Get hands-on experience with Amazon Web Services and cloud computing.</p>
+            </div>
+            <div class="col-md-4 course-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/2023/01/Devops-institute-Innomatics-research-labs-KukatpallyHyderabad.jpg" class="img-fluid" alt="DevOps Training">
+                <h4>DevOps Training</h4>
+                <p>Learn the practices of DevOps to improve software development and deployment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classroom Section -->
+    <section id="classrooms" class="container mt-5">
+        <h2 class="text-center">Our Classrooms</h2>
+        <div class="row">
+            <div class="col-md-4 classroom-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/cache/2023/01/IMG_5450-scaled/2374760138.jpg" class="img-fluid" alt="Classroom 1">
+                <h4>Modern Classroom</h4>
+                <p>State-of-the-art infrastructure for interactive learning.</p>
+            </div>
+            <div class="col-md-4 classroom-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/cache/2023/01/IMG_5414-scaled/2727721008.jpg" class="img-fluid" alt="Classroom 2">
+                <h4>Collaborative Learning</h4>
+                <p>Designed to promote group activities and teamwork.</p>
+            </div>
+            <div class="col-md-4 classroom-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/cache/2023/01/IMG_5452-scaled/2408469614.jpg" class="img-fluid" alt="Classroom 3">
+                <h4>Flexible Layout</h4>
+                <p>Our classrooms adapt to various teaching and learning methods.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="container mt-5">
+        <h2 class="text-center">Awards and Recognition</h2>
+        <div class="award-item">
+            <img src="https://www.innomatics.in/wp-content/uploads/2023/12/mb-banner.jpg" alt="Best Training Institute" />
+            <div>
+                <h4 class="text-center">Best Training Institute</h4>
+                <p class="text-center">Awarded for excellence in training and education in the field of technology.</p>
+            </div>
+        </div>
+        <div class="award-item">
+            <img src="https://www.innomatics.in/wp-content/uploads/2023/01/AWARD-PAGE.jpg" alt="Excellence in Education" />
+            <div>
+                <h4 class="text-center">Excellence in Education</h4>
+                <p class="text-center">Recognized for our commitment to providing top-notch education and training.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banners Section -->
+    <section id="banners" class="container mt-5">
+        <h2 class="text-center">Our Banners</h2>
+        <div class="row">
+            <div class="col-md-6 banner-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/2023/01/AWARD-PAGE.jpg" class="img-fluid" alt="Banner 1">
+                <h4>Banner 1</h4>
+            </div>
+            <div class="col-md-6 banner-item">
+                <img src="https://www.innomatics.in/wp-content/uploads/2024/09/full-stack-internship.jpg" class="img-fluid" alt="Banner 2">
+                <h4>Banner 2</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container">
+            <p>Follow us on social media:</p>
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.2.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
